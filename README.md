@@ -31,6 +31,8 @@ Arch : x86-64
 
 7. Create the directory and download aosp android-11.0.0_r4 tag.
 
+         mkdir aosp_11
+   
          repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r4
 
          repo sync -j32 --optimized-fetch --current-branch --no-tags
