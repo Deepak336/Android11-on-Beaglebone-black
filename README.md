@@ -11,7 +11,8 @@ Build machine: Ubuntu Jammy 22.04
 Arch : x86-64
 
 
-DOWNLOADING THE SOURCES
+
+**DOWNLOADING THE SOURCES**
 
 1. Prerequisite is to have repo installed.
     For installation instructions : https://source.android.com/setup/build/downloading#installing-repo
@@ -24,10 +25,14 @@ DOWNLOADING THE SOURCES
     a.repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r4
       repo sync -j32 --optimized-fetch --current-branch --no-tags
 
-BUILDING
+
+
+**BUILDING**
 1. Building the kernel and aosp with required changes is covered in individual folders.
 
-BOOTING
+
+
+**BOOTING**
 1. Booting the bb from sd card is covered under sdcard section.
 
 
