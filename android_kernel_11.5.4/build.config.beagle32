@@ -1,0 +1,15 @@
+. ${ROOT_DIR}/${KERNEL_DIR}/build.config.common
+. ${ROOT_DIR}/${KERNEL_DIR}/build.config.arm
+
+DEFCONFIG=beagle_gki_defconfig
+PRE_DEFCONFIG_CMDS="cat ${ROOT_DIR}/${KERNEL_DIR}/arch/arm64/configs/gki_defconfig ${ROOT_DIR}/${KERNEL_DIR}/arch/arm/configs/omap2plus_defconfig > ${ROOT_DIR}/${KERNEL_DIR}/arch/arm/configs/${DEFCONFIG};"
+POST_DEFCONFIG_CMDS="rm ${ROOT_DIR}/${KERNEL_DIR}/arch/arm/configs/${DEFCONFIG}"
+
+
+FILES="
+arch/arm/boot/Image.gz
+arch/arm/boot/Image
+arch/arm/boot/dts/am335x-boneblack.dtb
+vmlinux
+System.map
+"
